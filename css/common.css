@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    --primary-color-s1: #053742;
+    --primary-color-s2: #39a2db;
+    --primary-color-s3: #a2dbfa;
+    --primary-color-s3: #e8f0f2;
+  }
+  
+ body{
+    font-size: 16px;
+    position: relative;
+ }
+ 
+
+
+  .header{
+    background-color: white;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    /* padding-bottom: 10px; */
+  }
+  
+  #logo {
+    border-radius: 50%;
+    width: 57px;
+    height: 55px;
+    transform: translate3d(20px, -10px, 0px) scale(1.05);
+    background-color: white;
+    /* margin-bottom: 25px; */
+  }
+  
+  .logo-name {
+    font-weight: 550;
+    width: 57px;
+    height: 57px;
+    padding: 10 10 10 23;
+    color: var(--primary-color-s1) ;
+    font-size: xx-large;
+  }
+
+
+/* 
+.breadcrumb {
+    background-color: #e5e3e8;
+    font-size: 13px;
+    border-radius: 0px;
+    margin-bottom: 0px;
+  } */
+  
+
+/* The side navigation menu */
+.sidebar {
+    margin: 60px 0 0 0;
+    padding: 0;
+    width: 200px;
+    background-color: var(--primary-color-s3);
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  /* Sidebar links */
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  /* Active/current link */
+  .sidebar a.active {
+    background-color: var(--primary-color-s1);
+    color: white;
+  }
+  
+  /* Links on mouse-over */
+  .sidebar a:hover{
+    background-color: var(--primary-color-s2);
+    color: white;
+  }
+
+
+  
+  
+  
+  /* On screens that are less than 700px wide, make the sidebar into a topbar */
+  @media screen and (max-width: 700px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+  
